@@ -1,18 +1,16 @@
-#esta funcao gera varios (de acordo com a iteracao do for) numeros pseudo-aleatorios entre 0 e 1, utilizando 3 variaveis e uma semente
 def gerador_NunsPseudoAleatorio(iteracoes):
+    """esta funcao gera varios (de acordo com a iteracao do for) numeros pseudo-aleatorios entre 0 e 1, utilizando 3 variaveis e uma semente e retorna uma lista de valores pseudo aleatórios """
     a = 13
     c = 0
     M = 13033 #recomendado que seja primo
 
     #1 >= semente <= M 
     semente = 277
-
     x0 = semente
     xN = 0
 
     valores = []
     for i in range(iteracoes):
-
         #se for a primeira iteracao, calcula o primeiro termo da seq
         if i == 0:
             numSeq = (a * x0 + c) % M
