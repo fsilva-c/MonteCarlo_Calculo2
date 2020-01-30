@@ -24,11 +24,11 @@ def gerador_NunsPseudoAleatorio(iteracoes):
     
     return valores
 
-def calIntegralDupla():
+def calIntegralDupla(numIteracoes):
+    """recebe um inteiro que corresponde ao número de iterações e devolve o cálculo da integral definida dentro da função"""
     xEnd = 1.
     yEnd = 14.
 
-    numIteracoes = 188000
     resulIntegral = 0.
 
     x = gerador_NunsPseudoAleatorio(numIteracoes)
@@ -46,5 +46,5 @@ def calIntegralDupla():
     
     return resulIntegral   
 
-volume = calIntegralDupla()
+volume = calIntegralDupla(188000)
 print(volume)
